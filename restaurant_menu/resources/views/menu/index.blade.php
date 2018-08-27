@@ -125,7 +125,10 @@
 					price: this.price,
 					description: this.description,
 					menuType: this.menuType
-				}).then(location.reload());
+				}).then(location.reload())
+				.catch(error => {
+					console.log(error.response)
+				});
 			}
 		}
 
